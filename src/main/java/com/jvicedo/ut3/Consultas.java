@@ -58,16 +58,5 @@ public class Consultas {
         {
             System.out.println("La hormiga con id "+o[0]+" se llama "+o[1]+" y su VPN de confianza es: "+o[2]);
         }
-
-        System.out.println("-----------------");
-        //Seleccionamos que come cada hormiga
-        System.out.println("-----QUERY 5-----");
-        hql = "FROM Cortahoja WHERE id = (:condicion) AND pass =(:condicion2)";
-        Query query5 = ss.createQuery(hql);
-        List<Object[]> result5 = query5.getResultList();
-        for(Object[] o:result5)
-        {
-            System.out.println("La hormiga con id "+o[0]+" se llama "+o[1]+" y su VPN de confianza es: "+o[2]);
-        }
     }
 }
