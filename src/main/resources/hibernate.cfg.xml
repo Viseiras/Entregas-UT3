@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:postgresql://localhost:5432/javier_vicedo</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">root</property>
+    <property name="show_sql">true</property>
+
+    <!-- DB schema will be updated if needed -->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <mapping class="com.jvicedo.ut3.Entidades.Alimento"/>
+    <mapping class="com.jvicedo.ut3.Entidades.Colonia"/>
+    <mapping class="com.jvicedo.ut3.Entidades.Cortahoja"/>
+    <mapping class="com.jvicedo.ut3.Entidades.Hormiga"/>
+    <mapping class="com.jvicedo.ut3.Entidades.Vpn"/>
+  </session-factory>
+</hibernate-configuration>
